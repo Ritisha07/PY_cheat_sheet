@@ -1,17 +1,15 @@
 from random import shuffle
 
+
 class Deck:
-    SUITE = 'H D S C'.split()
-    RANKS = [2,3,4,5,6,7,8,9,10,'J','Q','K','A']
+    SUITE = "H D S C".split()
+    RANKS = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"]
 
-    print(SUITE)
+    def __init__(self) -> None:
+        self.card_list = [(s, r) for s in self.SUITE for r in self.RANKS]
 
-    li = []
-    for r in RANKS:
-        for s in SUITE:
-            li.append((r,s))
-    
-    print(len(li))
+    def sufflt(self):
+        shuffle(self.card_list)
 
-
-deck = Deck()
+    def split_in_half(self):
+        return (self.card_list[:26], self.card_list[26:])
