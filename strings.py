@@ -19,7 +19,7 @@ print(f'Hello, my name is {name} and I am {age}')
 s = 'helloworld'
 
 # Capitalize string
-print(s.capitalize())
+print('capitalize string:', s.capitalize())
 
 # Make all uppercase
 print(s.upper())

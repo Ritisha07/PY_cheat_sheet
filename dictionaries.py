@@ -18,7 +18,8 @@ print(person.get('last_name'))
 person['phone'] = '555-555-5555'
 
 # Get dict keys
-print(person.keys())
+print('keys::', person.keys())
+print('keys with list wrap around::', list(person.keys()))
 
 # Get dict items
 print(person.items())
