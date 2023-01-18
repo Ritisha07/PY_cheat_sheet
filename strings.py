@@ -60,3 +60,9 @@ print(s.isalpha())
 
 # Is all numeric
 print(s.isnumeric())
+
+
+
+r = {"key": "value"}
+text = r.text # same as converting to stringify in js 
+jsonText = r.json()
